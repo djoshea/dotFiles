@@ -1,0 +1,68 @@
+# Latex path
+TEXINPUTS="~/Dropbox/latex/tree"
+
+# Default environment path for virtualenvwrapper
+export WORKON_HOME="$HOME/env"
+export PROJECT_HOME="$HOME/code"
+#source /usr/local/bin/virtualenvwrapper.sh
+export PIP_VIRTUALENV_BASE=$WORKON_HOME
+export PIP_RESPECT_VIRTUALENV=true
+
+# removing to expose homebrew git 1.8
+#PATH=~/bin:/usr/local/git/bin:$PATH
+
+# add homebrew vim
+PATH=/usr/local/Cellar/vim/HEAD/bin:$PATH
+
+# add homebrew Cellar before /usr/bin
+PATH=/usr/local/bin:$PATH
+
+# add npm binaries
+PATH=/usr/local/share/npm/bin:$PATH
+
+# add homebrew python
+#export PATH=/usr/local/share/python:$PATH
+#export PYTHONPATH=/usr/local/lib/python:$PYTHONPATH
+
+# Setting PATH for Python 2.7
+# removing this to allow homebrew's Python 2.7.3 to supercede
+# PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
+# export PATHNG=en_US.UTF-8
+
+# Set locale settings
+export LC_ALL=en_US.UTF-8
+#export LANG=en_US.UTF-8# Latex path
+TEXINPUTS="~/Dropbox/latex/tree"
+
+# Default environment path for virtualenvwrapper
+export WORKON_HOME="$HOME/env"
+export PROJECT_HOME="$HOME/code"
+#source /usr/local/bin/virtualenvwrapper.sh
+export PIP_VIRTUALENV_BASE=$WORKON_HOME
+export PIP_RESPECT_VIRTUALENV=true
+
+# removing to expose homebrew git 1.8
+#PATH=~/bin:/usr/local/git/bin:$PATH
+
+# add homebrew vim
+PATH=/usr/local/Cellar/vim/HEAD/bin:$PATH
+
+# add homebrew Cellar before /usr/bin
+PATH=/usr/local/bin:$PATH
+
+# add npm binaries
+PATH=/usr/local/share/npm/bin:$PATH
+
+# add homebrew python
+#export PATH=/usr/local/share/python:$PATH
+#export PYTHONPATH=/usr/local/lib/python:$PYTHONPATH
+
+# Setting PATH for Python 2.7
+# removing this to allow homebrew's Python 2.7.3 to supercede
+# PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
+# export PATHNG=en_US.UTF-8
+
+# Set locale settings
+export LC_ALL=en_US.UTF-8
+#export LANG=en_US.UTF-8
+
