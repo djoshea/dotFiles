@@ -1,0 +1,73 @@
+# directory listing
+alias ls='ls -FG'
+alias la='ls -A'
+alias ll='ls -lATh'
+
+alias clc="clear"
+alias p="ps -u djoshea"
+
+#alias ff="find . -name"
+alias ff="tree --prune --noreport -P"
+alias fif="grep -R -C3 -n --color"
+
+# vim
+#alias vim="vim --servername VIM"
+alias v="vim"
+alias gv="mvim"
+alias gvim="mvim"
+
+# matlab local
+alias m="/Applications/MATLAB_R2013b.app/bin/matlab -nodesktop"
+alias mx="/Applications/MATLAB_R2013b.app/bin/matlab"
+
+# lab ssh commands
+alias sk="ssh djoshea@knuckle1"
+alias skx="ssh djoshea@knuckle2"
+alias sk2x="ssh -Y djoshea@knuckle2"
+alias sk2="ssh djoshea@knuckle2"
+
+alias mc="mosh djoshea@cranium"
+alias mi="mosh djoshea@index"
+
+# for editing/sourcing this file
+alias vb="vim ~/.bash_profile"
+alias sb="source ~/.bash_profile"
+
+alias vz="vim ~/.zshrc"
+alias sz="source ~/.zshrc"
+
+alias va="vim ~/.aliases"
+
+# git commands
+alias gs="nocorrect git status"
+alias git="nocorrect git"
+alias ga="git add"
+alias gc="git commit -m"
+alias gca="git commit -am"
+alias gu="git push"
+alias gd="git pull"
+
+# up directory
+alias u="cd .."
+alias ..="cd .."
+alias ~="cd ~"
+
+alias t="tmux"
+
+# common directories
+alias l="cd ~/npl/lab"
+alias td="cd ~/npl/trial-data"
+alias mu="cd ~/npl/matlab-utils"
+alias mdb="cd ~/npl/matdb"
+alias r4="cd ~/npl/rig4"
+alias r5="cd ~/npl/rig5"
+alias ofc="cd ~/npl/npl-analysis-ofc" 
+
+# recursive grep pwd for pattern
+
+alias xpra="/Applications/Xpra.app/Contents/MacOS/Xpra"
+
+function mosht() {
+    mosh $* 'tmux a || tmux || /bin/zsh'
+}
+
