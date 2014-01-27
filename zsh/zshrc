@@ -38,7 +38,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 function powerline_precmd() {
-    export PS1="$(~/extern/powerline-shell/powerline-shell.py $? --shell zsh) "
+    #export PS1="$(~/extern/powerline-shell/powerline-shell.py $? --shell zsh) "
 }
 
 function install_powerline_precmd() {
@@ -47,10 +47,10 @@ function install_powerline_precmd() {
             return
         fi
     done
-    precmd_functions+=(powerline_precmd)
+    #precmd_functions+=(powerline_precmd)
 }
 
-install_powerline_precmd
+#install_powerline_precmd
 
 #. /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
 
@@ -59,9 +59,9 @@ setopt autocd
 source ~/.aliases
 source ~/.profile
 source ~/.path
-sh ~/extern/base16-shell/base16-default.dark.sh
+#sh ~/extern/base16-shell/base16-default.dark.sh
 
-PS1="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#D" | tr -d %) "$PWD")'
+#PS1="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#D" | tr -d %) "$PWD")'
 
 tabelabel_precmd () {
     tab_label=${PWD/${HOME}/\~} # use 'relative' path
@@ -70,3 +70,6 @@ tabelabel_precmd () {
 }
 
 precmd_functions+=(tablabel_precmd)
+
+. /usr/local/Cellar/python/2.7.6/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
+

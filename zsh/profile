@@ -21,8 +21,8 @@ PATH=/usr/local/bin:$PATH
 PATH=/usr/local/share/npm/bin:$PATH
 
 # add homebrew python
-#export PATH=/usr/local/share/python:$PATH
-#export PYTHONPATH=/usr/local/lib/python:$PYTHONPATH
+export PATH=/usr/local/share/python:$PATH
+export PYTHONPATH=/usr/local/lib/python2.7:$PYTHONPATH
 
 # Setting PATH for Python 2.7
 # removing this to allow homebrew's Python 2.7.3 to supercede
@@ -65,4 +65,6 @@ PATH=/usr/local/share/npm/bin:$PATH
 # Set locale settings
 export LC_ALL=en_US.UTF-8
 #export LANG=en_US.UTF-8
+
+source ~/.profile.local
 
