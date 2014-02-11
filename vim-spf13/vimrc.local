@@ -1,5 +1,8 @@
+UnBundle 'spf13/vim-autoclose'
+
 set t_Co=256
 colorscheme grb256
+
 let g:indent_guides_auto_colors = 0
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=235
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=238
@@ -11,6 +14,7 @@ set cursorline
 set nospell
 set number
 set nofoldenable
+set foldmethod=syntax
 
 "Make <Esc> work instantaneously, check that map <Esc> returns nothing
 silent! unmap <Esc>[H
