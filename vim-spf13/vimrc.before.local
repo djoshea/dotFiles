@@ -1,0 +1,5 @@
+let g:airline_powerline_fonts = 1
+let g:autoclose_on = 0
+
+let g:spf13_bundle_groups = ['general']
+"

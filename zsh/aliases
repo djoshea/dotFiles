@@ -1,3 +1,5 @@
+source ~/.aliases.local
+
 # directory listing
 alias ls='ls -FG'
 alias la='ls -A'
@@ -15,10 +17,6 @@ alias vim="vim --servername local"
 alias v="vim"
 alias gv="mvim"
 alias gvim="mvim"
-
-# matlab local
-alias m="/Applications/MATLAB_R2013b.app/bin/matlab -nodesktop"
-alias mx="/Applications/MATLAB_R2013b.app/bin/matlab"
 
 # lab ssh commands
 alias sk="ssh djoshea@knuckle1"
