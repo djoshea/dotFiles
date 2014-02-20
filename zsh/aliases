@@ -11,7 +11,7 @@ alias ff="tree --prune --noreport -P"
 alias fif="grep -R -C3 -n --color"
 
 # vim
-#alias vim="vim --servername VIM"
+alias vim="vim --servername local"
 alias v="vim"
 alias gv="mvim"
 alias gvim="mvim"
