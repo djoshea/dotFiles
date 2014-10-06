@@ -1,4 +1,5 @@
 UnBundle 'spf13/vim-autoclose'
+UnBundle 'myusuf3/numbers.vim'
 
 set t_Co=256
 colorscheme grb256
@@ -45,3 +46,16 @@ map <Leader>q :bd<Return>
 
 set timeoutlen=500 ttimeoutlen=0
 
+map <Leader>b :CtrlPBuffer<Return>
+map <Leader>d :CtrlPCurFile<Return>
+map <leader>p :CtrlPMixed<Return>
+
+set timeoutlen=1000 ttimeoutlen=0
+
+" disable neocompl auto complete
+let g:neocomplcache_disable_auto_complete = 1
+inoremap <expr><TAB> pumvisible() ? "\<C-n>" : <SID>check_back_space() ? "\<TAB>" : "\<C-x>\<C-u>"
+function! s:check_back_space()"{{{
+    let col = col('.') - 1
+    return !col || getline('.')[col - 1] =~ '\s'
+endfunction"}}
