@@ -29,17 +29,23 @@ export PYTHONPATH=/usr/local/lib/python2.7:$PYTHONPATH
 # PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
 # export PATHNG=en_US.UTF-8
 
-# Set locale settings
-export LC_ALL=en_US.UTF-8
-#export LANG=en_US.UTF-8# Latex path
-TEXINPUTS="~/Dropbox/latex/tree"
-
 # Default environment path for virtualenvwrapper
 export WORKON_HOME="$HOME/env"
 export PROJECT_HOME="$HOME/code"
 #source /usr/local/bin/virtualenvwrapper.sh
 export PIP_VIRTUALENV_BASE=$WORKON_HOME
 export PIP_RESPECT_VIRTUALENV=true
+
+# Detect virtualenv when entering directory with .env file
+has_virtualenv() {
+ if [ -e .venv ]; then
+ workon `cat .venv`
+ fi
+}
+venv_cd () {
+ builtin cd "$@" && has_virtualenv
+}
+alias cd="venv_cd"
 
 # removing to expose homebrew git 1.8
 #PATH=~/bin:/usr/local/git/bin:$PATH
@@ -64,7 +70,7 @@ PATH=/usr/local/share/npm/bin:$PATH
 
 # Set locale settings
 export LC_ALL=en_US.UTF-8
-#export LANG=en_US.UTF-8
+export LANG=en_US.UTF-8
 
 source ~/.profile.local
 

@@ -1301,15 +1301,15 @@
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>369 265 201 309 0 0 1366 746 </string>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>166 94 445 270 0 0 1366 746 </string>
+	<string>381 165 505 270 0 0 1366 746 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>234 90 924 485 0 0 1366 746 </string>
+	<string>326 101 924 485 0 0 1366 768 </string>
 	<key>NSWindow Frame SUStatusFrame</key>
-	<string>697 528 384 129 0 0 1366 746 </string>
+	<string>493 462 384 129 0 0 1366 746 </string>
 	<key>NSWindow Frame com.apple.typography_panel_Inconsolata-g</key>
 	<string>319 515 260 42 0 0 1366 746 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>4 0 681 746 0 0 1366 746 </string>
+	<string>4 202 681 544 0 0 1366 746 </string>
 	<key>NeverWarnAboutShortLivedSessions_5C72787E-402E-4BAF-8AE4-F22B3C1AFFC0</key>
 	<true/>
 	<key>New Bookmarks</key>
@@ -1847,11 +1847,11 @@
 			<key>Name</key>
 			<string>iTerm2</string>
 			<key>Non Ascii Font</key>
-			<string>SourceCodePro-ExtraLightForPowerline 11</string>
+			<string>SauceCodePowerline-ExtraLight 11</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>SourceCodePro-ExtraLightForPowerline 11</string>
+			<string>SauceCodePowerline-Light 10</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -2938,7 +2938,7 @@
 				<real>1</real>
 			</dict>
 			<key>Character Encoding</key>
-			<integer>4</integer>
+			<integer>2348810496</integer>
 			<key>Close Sessions On End</key>
 			<true/>
 			<key>Columns</key>
@@ -3297,11 +3297,11 @@
 			<key>Name</key>
 			<string>Hotkey Window</string>
 			<key>Non Ascii Font</key>
-			<string>Monaco 12</string>
+			<string>SourceCodePro-ExtraLightForPowerline 11</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>Monaco 12</string>
+			<string>SourceCodePro-ExtraLightForPowerline 11</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -3540,11 +3540,11 @@
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUFeedURL</key>
-	<string>http://iterm2.googlecode.com/svn/trunk/appcasts/testing.xml</string>
+	<string>http://iterm2.com/appcasts/testing.xml</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2014-02-05T05:39:37Z</date>
+	<date>2014-07-10T10:20:56Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
@@ -5109,6 +5109,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>1.0.0.20130210</string>
+	<string>1.0.0.20140518</string>
 </dict>
 </plist>

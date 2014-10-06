@@ -36,6 +36,9 @@ alias sz="source ~/.zshrc"
 
 alias va="vim ~/.aliases"
 
+# inkscape
+inkscape="/Applications/Inkscape.app/Contents/Resources/bin/inkscape"
+
 # git commands
 alias gs="nocorrect git status"
 alias git="nocorrect git"

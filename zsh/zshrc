@@ -38,7 +38,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 function powerline_precmd() {
-    #export PS1="$(~/extern/powerline-shell/powerline-shell.py $? --shell zsh) "
+    export PS1="$(~/extern/powerline-shell/powerline-shell.py $? --shell zsh) "
 }
 
 function install_powerline_precmd() {
@@ -47,10 +47,10 @@ function install_powerline_precmd() {
             return
         fi
     done
-    #precmd_functions+=(powerline_precmd)
+    precmd_functions+=(powerline_precmd)
 }
 
-#install_powerline_precmd
+install_powerline_precmd
 
 #. /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
 
@@ -69,7 +69,8 @@ tabelabel_precmd () {
     echo -ne "\e]1;${tab_label: -24}\a" # set tab title to rightmost 24 characters
 }
 
-precmd_functions+=(tablabel_precmd)
+#precmd_functions+=(tablabel_precmd)
 
-. /usr/local/Cellar/python/2.7.6/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
+# . /usr/local/Cellar/python/2.7.6/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
+
 
